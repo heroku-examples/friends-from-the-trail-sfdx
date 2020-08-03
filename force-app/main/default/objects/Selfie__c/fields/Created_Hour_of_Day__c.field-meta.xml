@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Created_Hour_of_Day__c</fullName>
+    <description>Sortable year, month, date, and hour</description>
+    <externalId>false</externalId>
+    <formula
+  >TEXT(YEAR(DATEVALUE(CreatedDate - 0.3336))) &amp; &quot;-&quot; &amp; LPAD(TEXT(MONTH(DATEVALUE(CreatedDate - 0.3336))), 2, &quot;0&quot;) &amp; &quot;-&quot; &amp; LPAD(TEXT(DAY(DATEVALUE(CreatedDate - 0.3336))), 2, &quot;0&quot;) &amp; &quot; Hour &quot; &amp; LPAD(TEXT(HOUR(TIMEVALUE(CreatedDate - 0.3336))), 2, &quot;0&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Created Hour of Day</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

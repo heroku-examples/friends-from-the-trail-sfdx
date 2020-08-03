@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Selfie_Image__c</fullName>
+    <externalId>false</externalId>
+    <formula>IMAGE( URL__c , &quot;selfie image&quot;, 200, 100)</formula>
+    <label>Selfie Image</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
